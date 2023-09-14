@@ -2,11 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { PrimaryButton } from 'shared-components'
+import { PrimaryButton } from '@/shared/src'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <>
       <div>

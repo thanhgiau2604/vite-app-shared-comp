@@ -15,11 +15,15 @@
     "jsx": "react-jsx",
 
     /* Linting */
+    "baseUrl": ".",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/shared/*": ["../shared-components/*"]
+    },
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "../shared-components" ],
+  "references": [{ "path": "./tsconfig.node.json" }],
 }
